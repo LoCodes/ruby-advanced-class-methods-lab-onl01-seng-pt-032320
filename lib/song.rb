@@ -55,4 +55,10 @@ class Song
   def self.alphabetical
     self.all.sort_by { |song| song.name }
   end
+
+  # .new_from_filename
+  #   initializes a song and artist_name based on the filename format
+  def self.new_from_filename
+    
+  end
 end
