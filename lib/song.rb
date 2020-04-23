@@ -65,7 +65,24 @@ class Song
   # .new_from_filename
   #   initializes a song and artist_name based on the filename format
   def self.new_from_filename(name)
-    parse = filename.split(" - ")
-  end
+    parts = filename.split(" - ")
+    artist_name = parts[0]
+    song_name = parts[1].gsub(".mp3", "")
 
+    song = self.new
+    song.name = song_name
+    song.artist_name = artist_name
+    song
+  end
+end
+
+
+  parts = filename.split(" - ")
+  artist_name = parts[0]
+  song_name = parts[1].gsub(".mp3", "")
+
+  song = self.new
+  song.name = song_name
+  song.artist_name = artist_name
+  song
 end
