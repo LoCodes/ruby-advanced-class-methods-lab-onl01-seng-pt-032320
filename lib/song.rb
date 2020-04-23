@@ -42,11 +42,14 @@ class Song
   end
 
   # .find_or_create_by_name
-  #  invokes .find_by_name and .create_by_name instead of repeating code (FAILED - 1)
-  #  returns the existing Song object (doesn't create a new one) when provided the title of an existing Song (FAILED - 2)
+  #  invokes .find_by_name and .create_by_name instead of repeating code
+  #  returns the existing Song object (doesn't create a new one) when provided the title of an existing Song
   #  creates a new Song object with the provided title if one doesn't already exist
 
-  def self.find_or_create_by_name
+  def self.find_or_create_by_name(name)
+    self.find_by_name
+
+
   end
 
 
