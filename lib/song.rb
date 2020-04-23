@@ -3,10 +3,10 @@ class Song
   @@all = []
 
 
-  def initialize(song)
-    @song = song
-    #@artist_name = artist_name
-  end
+  # def initialize(song)
+  # #   @song = song
+  # #   #@artist_name = artist_name
+  # # end
 
 
   def self.all
@@ -65,6 +65,8 @@ class Song
   # .new_from_filename
   #   initializes a song and artist_name based on the filename format
   def self.new_from_filename
+    part = filename.split(" - ")
+    binding.pry
 
   end
 end
