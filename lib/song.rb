@@ -37,4 +37,8 @@ class Song
   #   can find a song present in @@all by name (FAILED - 1)
   #   returns falsey when a song name is not present in @@all
 
+  def self.find_by_name(name)
+    
+  end 
+
 end
