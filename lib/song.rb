@@ -30,6 +30,7 @@ class Song
   #   instantiates and saves a song with a name property
   def self.create_by_name(name)
     song = Song.create
+    pry
     song.name = name
     song.save
     song
