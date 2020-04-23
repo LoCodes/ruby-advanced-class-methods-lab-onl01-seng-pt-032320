@@ -28,10 +28,10 @@ class Song
   end
 
   def self.create_by_name
-    song = Song.new 
-    song.name = name 
-    song.save 
+    song = Song.new
+    song.name = name
+    song.save
     song
-  end 
+  end
 
 end
