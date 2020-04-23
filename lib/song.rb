@@ -33,5 +33,8 @@ class Song
     song.name = name
     song
   end
+  # .find_by_name
+  #   can find a song present in @@all by name (FAILED - 1)
+  #   returns falsey when a song name is not present in @@all
 
 end
