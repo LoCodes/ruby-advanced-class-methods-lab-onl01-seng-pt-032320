@@ -38,8 +38,7 @@ class Song
   #   returns falsey when a song name is not present in @@all
 
   def self.find_by_name(name)
-    @@all.find{|person| person.name == name}
-
+    @@all.find{|song| song.name == name}
   end
 
 end
