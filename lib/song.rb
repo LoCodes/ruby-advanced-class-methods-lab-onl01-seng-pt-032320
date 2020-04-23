@@ -26,7 +26,8 @@ class Song
     song.name = name
     song
   end
-  #
+  # # .create_by_name
+  #   instantiates and saves a song with a name property
   def self.create_by_name(name)
     song = Song.create
     song.name = name
