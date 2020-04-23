@@ -19,8 +19,9 @@ class Song
     song.save
     return song
   end
-
-  # def self.new_by_name 
-  end 
+  # .new_by_name
+  #   instantiates a song with a name property
+  def self.new_by_name(name)
+  end
 
 end
