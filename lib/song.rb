@@ -50,8 +50,8 @@ class Song
     self.find_by_name(name) || self.create_by_name(name)
   end
 
-  def self.alphabetical
-    self.all.sort
+  def self.alphabetical(name)
+    self.all.sort(name)
   end
 
 
