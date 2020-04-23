@@ -3,6 +3,12 @@ class Song
   @@all = []
 
 
+  def initialize(song, artist_name)
+    @song = song
+    @artist_name = artist_name
+  end 
+
+
   def self.all
     @@all
   end
@@ -59,6 +65,6 @@ class Song
   # .new_from_filename
   #   initializes a song and artist_name based on the filename format
   def self.new_from_filename
-    
+
   end
 end
