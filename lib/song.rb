@@ -32,13 +32,16 @@ class Song
     song.name = name
     song
   end
+
   # # .create_by_name
   #   instantiates and saves a song with a name property
+
   def self.create_by_name(name)
     song = Song.create
     song.name = name
     song
   end
+
   # .find_by_name
   #   can find a song present in @@all by name (FAILED - 1)
   #   returns falsey when a song name is not present in @@all
@@ -55,15 +58,17 @@ class Song
   def self.find_or_create_by_name(name)
     self.find_by_name(name) || self.create_by_name(name)
   end
-  #
+
   # .alphabetical
   # returns all the song instances in alphabetical order by song name
+
   def self.alphabetical
     self.all.sort_by { |song| song.name }
   end
 
   # .new_from_filename
   #   initializes a song and artist_name based on the filename format
+
   def self.new_from_filename(filename)
     filename = filename.split(' - ')
     artist_name = filename[0]
@@ -75,6 +80,8 @@ class Song
     song
   end
 
+  # .create_from_filename
+  #     initializes and saves a song and artist_name based on the filename format
 
   def self.create_from_filename(filename)
    result = self.new_from_filename(filename)
@@ -82,5 +89,16 @@ class Song
    song.name = result.name
    song.artist_name = result.artist_name
    song
+  end
+
+  # .destroy_all
+  #   clears all the song instances from the @@all array
+
+  def self.destroy_all
+    self.all.clear
+  end
+
+  def self.destroy_all
+    self.all.clear
   end
 end
