@@ -46,11 +46,8 @@ class Song
   #  returns the existing Song object (doesn't create a new one) when provided the title of an existing Song
   #  creates a new Song object with the provided title if one doesn't already exist
 
-  def self.find_or_create_by_name(name)
-    self.find_by_name || self.create_by_name
-    self 
-
-
+  def self.find_or_create_by_name(song_name)
+    self.find_by_name(song_name) || self.create_by_name(song_name)
   end
 
 
