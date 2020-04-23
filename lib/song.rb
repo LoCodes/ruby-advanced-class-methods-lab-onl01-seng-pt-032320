@@ -52,7 +52,5 @@ class Song
 
   def self.alphabetical
     self.array.sort do |a, b|
-      a <=> b
     end
-  end
-    
+  end 
