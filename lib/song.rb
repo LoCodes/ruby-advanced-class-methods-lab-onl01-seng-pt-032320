@@ -53,6 +53,6 @@ class Song
   # .alphabetical
   # returns all the song instances in alphabetical order by song name
   def self.alphabetical
-    self.sort_by {|song| song.name}
+    self.sort_by { |song| song.name }
   end
 end
