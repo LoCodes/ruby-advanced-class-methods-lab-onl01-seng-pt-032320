@@ -14,6 +14,9 @@ class Song
   def save
     self.class.all << self
   end
+  # 
+  # .create
+  #     instantiates and saves the song, and it returns the new song that was created
 
   def self.create
     song = Song.new
