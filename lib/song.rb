@@ -65,7 +65,7 @@ class Song
   # .new_from_filename
   #   initializes a song and artist_name based on the filename format
   def self.new_from_filename
-    part = filename.split(" - ")
+    parse = filename.split(" - ")
     binding.pry
   end
 
