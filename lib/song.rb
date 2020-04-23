@@ -49,10 +49,10 @@ class Song
   def self.find_or_create_by_name(name)
     self.find_by_name(name) || self.create_by_name(name)
   end
-  # 
+  #
   # .alphabetical
   # returns all the song instances in alphabetical order by song name
   def self.alphabetical
     self.sort{|song| song.name == name}
-  end 
+  end
 end 
