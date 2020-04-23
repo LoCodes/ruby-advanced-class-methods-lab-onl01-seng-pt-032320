@@ -9,7 +9,7 @@ class Song
 
   def save
     self.all << self
-    binding.pry
+    #binding.pry
   end
 
   # .create
