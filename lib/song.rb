@@ -64,7 +64,7 @@ class Song
 
   # .new_from_filename
   #   initializes a song and artist_name based on the filename format
-  def self.new_from_filename(name)
+  def self.new_from_filename(song_name)
     parts = filename.split(" - ")
     artist_name = parts[0]
     song_name = parts[1].gsub(".mp3", "")
