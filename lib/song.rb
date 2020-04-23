@@ -22,8 +22,9 @@ class Song
   # .new_by_name
   #   instantiates a song with a name property
   def self.new_by_name(name)
-    a = Song.new
-    a.new_by_name
+    song = Song.new 
+    song.new_by_name
+    song
 
   end
 
